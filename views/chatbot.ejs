@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeel Chatbot</title>
+</head>
+<body>
+    <h1>Welcome to Zeel Automation</h1>
+    <p>Chat with our AI bot for assistance!</p>
+
+    <!-- Optional: Button to Manually Trigger Chatbot -->
+    <button onclick="openChatbot()">Chat with Us</button>
+
+    <!-- Chatbase Chatbot Script -->
+    <script>
+        window.chatbaseConfig = {
+            chatbotId: "YOUR_CHATBOT_ID", // Replace with your actual Chatbase chatbot ID
+            disableWelcomeMessage: false,
+            greeting: "Hello! How can I assist you today?",
+        };
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="kvtWvET1ENE-lj2xfQ89x" defer></script>
+
+    <script>
+        function openChatbot() {
+            window.Chatbase.show();
+        }
+    </script>
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="kvtWvET1ENE-lj2xfQ89x";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
+</body>
+</html>
