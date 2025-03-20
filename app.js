@@ -43,7 +43,7 @@ app.use(express.static(path.join(__dirname, '/views/public')));
 
 
 app.get('/automations', (req, res) => {
-    res.render('automations');
+    res.render('chatbot');
   });
 app.get('/deal', (req, res) => {
     res.render('deal');
